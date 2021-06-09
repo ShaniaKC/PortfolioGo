@@ -1,0 +1,204 @@
+* body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-size: 25px
+}
+
+p {
+    line-height: 2.5rem
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 25px;
+    list-style: none;
+    margin: 50px auto;
+}
+
+.navgroup {
+    width: auto
+}
+
+.navline {
+    max-width: 100px;
+    width: inherit;
+    height: 5px;
+    background: linear-gradient(to left, rgba(250, 93, 237, .8), rgba(85, 236, 85, .801), rgba(103, 219, 248, .8));
+    border-radius: 20px;
+    margin: auto
+}
+
+footer {
+    height: 100vh;
+    width: 10vw;
+    border: 1px solid #b8b6b6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center
+}
+
+footer h3 {
+    display: none;
+}
+
+.connect {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    font-size: 40px
+}
+
+main {
+    margin-left: 10vw
+}
+
+.welcome {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    margin: 2rem
+}
+
+welcome div {
+    max-width: 80vw
+}
+
+.welcome h2 {
+    font-family: Pacifico, serif
+}
+
+.vert {
+    transform: rotate(180deg)
+}
+
+section {
+    text-align: center
+}
+
+.stackcontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.stackcard {
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, rgba(250, 93, 237, .8), rgba(85, 236, 85, .801), rgba(103, 219, 248, .8));
+    width: 70vw;
+    margin: 3vh 5vw 3vh 10vw;
+    text-align: center
+}
+
+.stackcard ul {
+    text-align: left
+}
+
+.projects {
+    padding: 2rem;
+    margin-top: 10vh
+}
+
+.projectscard {
+    margin: 4rem 0
+}
+
+.projects hr {
+    width: 20vw;
+    margin: auto
+}
+
+.projects h4,
+.welcome h2 {
+    background: -webkit-linear-gradient(to left, rgba(250, 93, 237, .8), rgba(85, 236, 85, .801), rgba(103, 219, 248, .8));
+    background: linear-gradient(to left, rgba(250, 93, 237, .8), rgba(85, 236, 85, .801), rgba(103, 219, 248, .8));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+button {
+    min-width: 60px;
+    min-height: 40px;
+    text-align: center;
+    background-color: inherit;
+    color: inherit;
+    font-size: inherit;
+    border: 1px solid;
+    outline: none;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, rgba(250, 93, 237, .8), rgba(85, 236, 85, .801), rgba(103, 219, 248, .8))
+}
+
+button:hover,
+i {
+    transform: scale(1.1)
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+@media only screen and (min-width:1040px) {
+    footer h3 {
+        display: block
+    }
+
+    connect {
+        padding: 0;
+        font-size: 48;
+    }
+}
+
+@media only screen and (min-width:700px) {
+    .stackcontainer {
+        flex-direction: row
+    }
+
+    .stackcard {
+        width: 200px;
+        min-height: 300px;
+        margin: 1rem
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        height: 30vh;
+        width: 100%;
+        border: 1px solid #b8b6b6;
+        position: initial;
+        text-align: center;
+    }
+
+    .connect {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 20vh;
+    }
+
+    main {
+        margin-left: 0;
+        text-align: center;
+    }
+    .nav {
+     margin-right: 20px;  
+    }
+}
