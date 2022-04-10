@@ -25,6 +25,9 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin: 1rem 0;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .multi_pill .pill:nth-child(2n) {
   background-color: var(--light-purple);

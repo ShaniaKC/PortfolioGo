@@ -62,8 +62,9 @@ export default function Home() {
             <Image
               src="/images/Circular food.jpg"
               alt=""
-              width="100%"
-              height="100%"
+              width="400"
+              height="300"
+              // layout="fixed"
             />
           </div>
         }

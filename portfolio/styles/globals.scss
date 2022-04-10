@@ -33,7 +33,10 @@ nav {
   place-self: start center;
 }
 nav > * {
-  margin: 0.3rem 0.5rem;
+  margin: 0.3rem 0;
+  &:not(:first-child, :last-child) {
+    margin: 0.3rem 0.75rem;
+  }
 }
 footer {
   place-self: end center;

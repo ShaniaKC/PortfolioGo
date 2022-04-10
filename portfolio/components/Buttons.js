@@ -2,7 +2,7 @@ import styles from "../styles/Components.module.scss";
 
 const Button = (color) => (props) => {
   return (
-    <button className={styles[`${color}_button`]}>
+    <button className={styles[`${color}_button`]} {...props}>
       {props.text}
       {props.children}
     </button>
