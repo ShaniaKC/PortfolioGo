@@ -1,0 +1,42 @@
+.black_button {
+  background-color: black;
+  color: #ffffff;
+}
+.white_button {
+  background-color: white;
+  color: black;
+}
+
+// .white_button:hover,
+// .black_button:hover {
+//   border: 3px solid black;
+// }
+
+.pill {
+  padding: 0.35rem 0.5rem;
+  border-radius: 2rem;
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  text-align: center;
+  font-size: 0.85rem;
+}
+.multi_pill {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.multi_pill .pill:nth-child(2n) {
+  background-color: var(--light-purple);
+  color: var(--dark-purple);
+}
+.multi_pill .pill:nth-child(4n-2),
+.multi_pill .pill:nth-child(5n) {
+  background-color: var(--light-orange);
+  color: var(--dark-orange);
+}
+
+.multi_pill .pill:nth-child(3n) {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+}

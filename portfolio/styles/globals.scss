@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap");
+
+:root {
+  --light-green: #f2fdfa;
+  --light-orange: #fdf8f2;
+  --light-purple: #faf2fd;
+  --light-blue: #f2f7fd;
+  --dark-green: #0cb386;
+  --dark-orange: #b3860c;
+  --dark-blue: #0c92b3;
+  --dark-purple: #970cb3;
+}
+
+body {
+  font-family: "El Messiri", sans-serif;
+  font-size: 18px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header nav {
+  font-size: 1rem;
+}
+nav {
+  place-self: start center;
+}
+nav > * {
+  margin: 0.3rem 0.5rem;
+}
+footer {
+  place-self: end center;
+}
+h1 {
+  font-size: 2.8rem;
+  font-weight: 200;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+h3 {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+p {
+  font-size: 1rem;
+  margin: 1rem auto;
+}
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 500ms ease-in;
+}
+button:hover {
+  filter: brightness(120%);
+}
+.block {
+  text-align: center;
+  margin: 2rem auto;
+}
+.auto > * {
+  margin: auto;
+}
+.content-box {
+  max-width: 1040px;
+  margin: auto;
+  padding: 2.5rem 1.5rem;
+}
+.media-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.process-cards {
+  p {
+    font-weight: 500;
+  }
+}
+.media {
+  place-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* animations */
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-7%, 0, 0);
+    transform: translate3d(-7%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}

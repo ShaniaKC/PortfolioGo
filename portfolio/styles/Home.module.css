@@ -1,0 +1,6 @@
+.container {
+  display: grid;
+}
+.header {
+  background-color: rgba(15, 194, 152, 0.1);
+}

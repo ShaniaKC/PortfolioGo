@@ -1,0 +1,7 @@
+@mixin button_grid($num) {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat($num, 1fr);
+  gap: 1.5rem;
+  width: fit-content;
+}
