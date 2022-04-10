@@ -40,7 +40,7 @@ export const HomeHeader = () => {
     }, 2500);
 
     return () => clearInterval(intId);
-  }, []);
+  }, [keyArray]);
 
   return (
     <Header className={styles.home}>

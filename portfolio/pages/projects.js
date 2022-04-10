@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ProjectsHeader } from "../components/Headers";
 import { BlackButton } from "../components/Buttons";
 import MediaContent from "../components/MediaContent";
@@ -32,7 +33,7 @@ const projects = () => {
         }
         media={
           <div>
-            <img
+            <Image
               src="/images/Circular food.jpg"
               alt=""
               width="100%"
@@ -67,7 +68,7 @@ const projects = () => {
         }
         media={
           <div>
-            <img
+            <Image
               src="/images/Circular food.jpg"
               alt=""
               width="100%"
@@ -109,7 +110,7 @@ const projects = () => {
         }
         media={
           <div>
-            <img
+            <Image
               src="/images/Circular food.jpg"
               alt=""
               width="100%"

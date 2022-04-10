@@ -1,5 +1,5 @@
 import Head from "next/head";
-// import Image from "next/image";
+import Image from "next/image";
 import { HomeHeader } from "../components/Headers";
 import { BlackButton, WhiteButton } from "../components/Buttons";
 import styles from "../styles/Home.module.css";
@@ -59,7 +59,7 @@ export default function Home() {
         }
         media={
           <div>
-            <img
+            <Image
               src="/images/Circular food.jpg"
               alt=""
               width="100%"
@@ -142,7 +142,7 @@ export default function Home() {
 }
 
 {
-  /* <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+  /* <script src="https://cdn.lordicon.com/lusqsztk.js"> 
 <lord-icon
   src="https://cdn.lordicon.com/zpxybbhl.json"
   trigger="loop"
@@ -158,7 +158,7 @@ export default function Home() {
   stroke="15"
   style={{ width: "100px", height: "100px" }}
 ></lord-icon>
-<script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+<script src="https://cdn.lordicon.com/lusqsztk.js"> 
 <lord-icon
   src="https://cdn.lordicon.com/joeivjls.json"
   trigger="loop"
